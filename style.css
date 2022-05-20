@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Smooch', cursive;
+    background: orange;
+}
+
+.container{
+    /*border: 1px solid black;*/
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.groceries{
+    /*border: 1px solid black;*/
+    width: 600px;
+    min-height: 100vh;
+    margin: auto;
+    background: white;
+    box-shadow: 10px 10px 24px 0 black;
+}
+
+h1{
+   font-size: 2.5rem;
+   margin-top: 1em; 
+}
+
+i{
+  font-size: 2rem;
+  color: orange;  
+}
+
+.groceries input{
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid #000000;
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+#allItems h2{
+   margin-left: 39px;
+   margin-top: 15px;
+   font-size: 2rem;
+   cursor: move; 
+}
+
+@media(max-width:480px){
+    .groceries h1{
+        font-size: 2rem;
+    }
+    .groceries i {
+        font-size: 1.5rem;
+    }
+    .groceries input{
+        font-size: 1rem;
+    }
+    #allItems h2{
+        margin-left: 25px;
+        font-size: 1.5rem;
+    }
+}
